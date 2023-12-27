@@ -119,8 +119,8 @@
 /*
  * Detect our SDK by this macro
  */
-#ifndef __ACIDANTHERA_MAC_SDK
-#define __ACIDANTHERA_MAC_SDK 1
+#ifndef __devicemanager_MAC_SDK
+#define __devicemanager_MAC_SDK 1
 #endif
 
 /* 

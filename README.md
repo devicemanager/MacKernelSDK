@@ -10,7 +10,7 @@ To start using **MacKernelSDK** do the following steps:
 1. Clone MacKernelSDK to your project directory:
 
     ```sh
-    git clone https://github.com/acidanthera/MacKernelSDK
+    git clone https://github.com/devicemanager/MacKernelSDK
     ```
 
 2. Add custom `KERNEL_EXTENSION_HEADER_SEARCH_PATHS` and `KERNEL_FRAMEWORK_HEADERS` values in project configuration in Xcode. To do this choose **Add User-defined Setting**.
@@ -36,7 +36,7 @@ To start using **MacKernelSDK** do the following steps:
 
 5. Optionally add `/MacKernelSDK` to `.gitignore`.
 
-6. To make sure that you use the right SDK check for `__ACIDANTHERA_MAC_SDK` macro in `Availability.h`.
+6. To make sure that you use the right SDK check for `__devicemanager_MAC_SDK` macro in `Availability.h`.
 
 ## Targeting `i386`
 
@@ -62,7 +62,7 @@ To compile for 32-bit you will need to add a set of flags in your project:
 4. Library Search Paths set to contain a kmod with an i386 slice, e.g. $(PROJECT_DIR)/MacKernelSDK/Library/universal.
 
 5. The symbol table may be misaligned due to i386 kexts being of type `MH_OBJECT`.  
-`fix-macho32` is provided in the `scripts` directory of [ocbuild](https://github.com/acidanthera/ocbuild) to correct alignments. Python 3 and `macholib` are required.
+`fix-macho32` is provided in the `scripts` directory of [ocbuild](https://github.com/devicemanager/ocbuild) to correct alignments. Python 3 and `macholib` are required.
 
     Usage:
     ```
